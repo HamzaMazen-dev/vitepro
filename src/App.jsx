@@ -1,7 +1,7 @@
 // App.jsx
 import React from 'react'
 import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+   import { createHashRouter, RouterProvider } from 'react-router-dom';
 import CounterContextProvider from './Context/counterContext';
 import Layout from './Layout/Layout'
 import Home from './components/Home/Home'
@@ -23,7 +23,8 @@ import ForgetPass from './components/ForgetPass/ForgetPass';
 import VerifyCode from './components/VerifyCode/VerifyCode';
 import ResetPassword from './components/ResetPassword/ResetPassword';
  
-const route= createBrowserRouter([
+   const route = createHashRouter([
+
   {
     path: '/',
     element: <Layout/>,
